@@ -1,0 +1,8 @@
+body
+{
+    grid-template-areas:
+    "bnk bnk bnk but but"
+    "add lgo lgo lgo add"
+    "add prd prd prd add"
+    "add prd prd prd add"
+}
