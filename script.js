@@ -1,10 +1,10 @@
 var products = {
-  1: { name: 'Pipe 1', price: 1299, img: '/img/pipa1.png' },
-  2: { name: 'Pipe 2', price: 1799, img: '/img/pipa2.png' },
-  3: { name: 'Pipe 3', price:  999, img: '/img/pipa3.png' },
-  4: { name: 'Pipe 4', price: 2499, img: '/img/pipa4.png' },
-  5: { name: 'Pipe 5', price: 1599, img: '/img/pipa5.png' },
-  6: { name: 'Pipe 6', price: 1099, img: '/img/marijanapipes.png' }
+  1: { name: 'Pipe 1', price: 1299, img: './img/pipa1.png' },
+  2: { name: 'Pipe 2', price: 1799, img: './img/pipa2.png' },
+  3: { name: 'Pipe 3', price:  999, img: './img/pipa3.png' },
+  4: { name: 'Pipe 4', price: 2499, img: './img/pipa4.png' },
+  5: { name: 'Pipe 5', price: 1599, img: './img/pipa5.png' },
+  6: { name: 'Pipe 6', price: 1099, img: './img/marijanapipes.png' }
 };
 
 var cart = {};
