@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipe Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header>
+    <img src="/img/loga.png" alt="Logo" class="logo" /> <!-- loggan behövdes ta borts pga copyright --> 
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">FAQ</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <button onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <div class="layout">
+
+    <aside>
+      <img src="/img/add1.png" alt="Ad" />
+    </aside>
+
+    <main>
+      <h1>Our Collection</h1>
+      <p>Click a product to add it to your cart</p>
+
+      <div class="grid">
+        <div class="card" onclick="addToCart(1)">
+          <img src="/img/pipa1.png" alt="Pipe 1" />
+          <h3>Pipe 1</h3>
+          <p>SEK 1 299</p>
+        </div>
+        <div class="card" onclick="addToCart(2)">
+          <img src="/img/pipa2.png" alt="Pipe 2" />
+          <h3>Pipe 2</h3>
+          <p>SEK 1 799</p>
+        </div>
+        <div class="card" onclick="addToCart(3)">
+          <img src="/img/pipa3.png" alt="Pipe 3" />
+          <h3>Pipe 3</h3>
+          <p>SEK 999</p>
+        </div>
+        <div class="card" onclick="addToCart(4)">
+          <img src="/img/pipa4.png" alt="Pipe 4" />
+          <h3>Pipe 4</h3>
+          <p>SEK 2 499</p>
+        </div>
+        <div class="card" onclick="addToCart(5)">
+          <img src="/img/pipa5.png" alt="Pipe 5" />
+          <h3>Pipe 5</h3>
+          <p>SEK 1 599</p>
+        </div>
+        <div class="card" onclick="addToCart(6)">
+          <img src="/img/marijanapipes.png" alt="Pipe 6" />
+          <h3>Pipe 6</h3>
+          <p>SEK 1 099</p>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <img src="/img/add2.png" alt="Ad" />
+    </aside>
+
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <button onclick="toggleCart()">Close</button>
+    <div id="cartItems"><p>Your cart is empty.</p></div>
+    <p>Total: <span id="cartTotal">SEK 0</span></p>
+    <button onclick="clearCart()">Clear cart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
